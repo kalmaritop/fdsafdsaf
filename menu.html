@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;background:linear-gradient(#17100a,#0f0a07);
+  color:#d5c297;font-family:Georgia,"Times New Roman",serif;
+  border-right:1px solid rgba(217,180,90,.16)
+}
+.menu{padding:18px 15px 28px}
+.label{
+  margin:6px 8px 10px;color:#8f7a53;font:10px Segoe UI,Arial,sans-serif;
+  letter-spacing:.2em;text-transform:uppercase
+}
+a{
+  display:flex;align-items:center;gap:12px;text-decoration:none;
+  color:#c7b58b;padding:12px 12px;margin:5px 0;
+  border:1px solid transparent;position:relative;overflow:hidden;transition:.28s ease
+}
+a:before{
+  content:"";position:absolute;left:-105%;top:0;bottom:0;width:100%;
+  background:linear-gradient(90deg,rgba(111,23,23,.3),rgba(217,180,90,.05));
+  transition:.34s ease
+}
+a:hover{color:#f2ddb0;border-color:rgba(217,180,90,.18);transform:translateX(4px)}
+a:hover:before{left:0}
+.ico{
+  width:36px;height:36px;display:grid;place-items:center;z-index:1;
+  border:1px solid rgba(217,180,90,.18);background:#24160e;color:#d8b45c
+}
+.txt{z-index:1}
+.txt b{display:block;font-size:14px}
+.txt small{display:block;margin-top:3px;color:#766649;font:10px Segoe UI,Arial,sans-serif}
+.note{
+  margin-top:18px;padding:14px;border:1px solid rgba(217,180,90,.14);
+  background:rgba(97,24,19,.08)
+}
+.note b{font-size:12px;color:#d4b46b}
+.note p{font-size:11px;line-height:1.5;color:#8f7f5f;margin:7px 0 0}
+.orn{height:1px;background:linear-gradient(90deg,transparent,#9a7739,transparent);margin:16px 0}
+</style>
+</head>
+<body>
+<div class="menu">
+  <div class="label">Разделы архива</div>
+  <a href="home.html" target="main"><span class="ico">⌂</span><span class="txt"><b>Главная</b><small>вход в летопись</small></span></a>
+  <a href="bio.html" target="main"><span class="ico">✦</span><span class="txt"><b>Биография</b><small>жизненный путь</small></span></a>
+  <a href="works.html" target="main"><span class="ico">♫</span><span class="txt"><b>Произведения</b><small>опера и симфония</small></span></a>
+  <a href="style.html" target="main"><span class="ico">❖</span><span class="txt"><b>Музыкальный стиль</b><small>оркестровые краски</small></span></a>
+  <a href="timeline.html" target="main"><span class="ico">⌛</span><span class="txt"><b>Хронология</b><small>важные даты</small></span></a>
+  <a href="teachers.html" target="main"><span class="ico">☙</span><span class="txt"><b>Круг и ученики</b><small>влияние и школа</small></span></a>
+  <a href="legacy.html" target="main"><span class="ico">★</span><span class="txt"><b>Наследие</b><small>значение для музыки</small></span></a>
+  <a href="facts.html" target="main"><span class="ico">◎</span><span class="txt"><b>Интересные факты</b><small>необычные детали</small></span></a>
+  <div class="orn"></div>
+  <div class="note">
+    <b>АРХИВНЫЙ РЕЖИМ</b>
+    <p>Дизайн сочетает старорусскую летопись, музейный стенд и советскую плакатную эстетику.</p>
+  </div>
+</div>
+</body>
+</html>

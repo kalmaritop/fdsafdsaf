@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;height:104px;overflow:hidden;color:#efddb1;
+  font-family:Georgia,"Times New Roman",serif;
+  background:
+    linear-gradient(rgba(26,18,11,.96),rgba(18,12,8,.98)),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.02) 0 1px,transparent 1px 5px);
+  border-bottom:1px solid rgba(217,180,90,.2);
+  position:relative;
+}
+body:after{
+  content:"";position:absolute;left:0;right:0;bottom:5px;height:1px;
+  background:linear-gradient(90deg,transparent,#8d6c32,#c7a24e,#8d6c32,transparent)
+}
+.wrap{height:100%;padding:0 25px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:15px}
+.emblem{
+  width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+  border:4px double #a78345;background:#571612;color:#dec27d;
+  box-shadow:0 0 0 5px rgba(217,180,90,.04);
+  font:700 19px Georgia,serif;animation:emblem 5s ease-in-out infinite
+}
+@keyframes emblem{50%{transform:rotate(-2deg) scale(1.03)}}
+.title b{display:block;font-size:22px}
+.title span{
+  display:block;margin-top:4px;color:#9e8d6a;font:10px Segoe UI,Arial,sans-serif;
+  letter-spacing:.17em;text-transform:uppercase
+}
+.state{
+  border:1px solid rgba(217,180,90,.18);padding:8px 11px;
+  color:#ad9a72;font:10px Segoe UI,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="emblem">Н.Р.К.</div>
+    <div class="title">
+      <b>Николай Андреевич Римский‑Корсаков</b>
+      <span>Музыкальная летопись • архив композитора</span>
+    </div>
+  </div>
+  <div class="state">Государственный музыкальный архив • online</div>
+</div>
+</body>
+</html>
